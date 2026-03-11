@@ -1,0 +1,41 @@
+reddit:
+  subreddits:
+    - AmItheAsshole
+    - tifu
+    - relationship_advice
+    - TrueOffMyChest
+    - confession
+  sort: hot
+  limit: 25
+  min_body_length: 200
+  max_body_length: 5000
+
+llm:
+  base_url: "https://generativelanguage.googleapis.com/v1beta/openai/"
+  model: "gemini-2.5-flash-lite"
+  max_tokens: 1024
+  temperature: 0.7
+
+tts:
+  voice_en: "en-US-AndrewMultilingualNeural"
+  voice_ar: "ar-SA-HamedNeural"
+  rate: "+0%"
+  pitch: "+0Hz"
+
+subs:
+  font: "Arial Bold"
+  fontsize: 22
+  primary_color: "&H00FFFFFF"   # white
+  outline_color: "&H00000000"   # black
+  outline_width: 3
+  alignment: 2  # bottom center
+  margin_v: 80
+  max_chars_per_line: 35
+
+video:
+  width: 1080
+  height: 1920
+  fps: 30
+  codec: libx264
+  crf: 23
+  preset: medium

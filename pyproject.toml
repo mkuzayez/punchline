@@ -1,0 +1,26 @@
+[project]
+name = "punchline"
+version = "0.1.0"
+description = "CLI tool that turns Reddit stories into short-form vertical videos"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "typer>=0.9.0",
+    "requests>=2.31.0",
+    "openai>=1.0.0",
+    "edge-tts>=6.1.0",
+    "ffmpeg-python>=0.2.0",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+praw = ["praw>=7.7.0"]
+
+[project.scripts]
+punchline = "punchline.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
